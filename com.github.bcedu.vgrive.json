@@ -23,7 +23,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/bcedu/VGrive.git",
-                    "commit" : "912365f898447053e95838f4aeefd139f1d95aca" 
+                    "commit" : "ce85d8d47550fb2d5daa5c2cbffaf5ab9b91061f" 
                 }
             ]
         }
