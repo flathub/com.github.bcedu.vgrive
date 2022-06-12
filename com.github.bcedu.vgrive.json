@@ -1,15 +1,15 @@
 {
     "app-id": "com.github.bcedu.vgrive",
     "runtime": "org.gnome.Platform",
-    "runtime-version" : "3.36",
+    "runtime-version" : "42",
     "base" : "io.elementary.BaseApp",
-    "base-version" : "juno-19.08",
+    "base-version" : "juno-21.08",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.bcedu.vgrive",
     "finish-args": [
         "--share=ipc",
         "--share=network",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland",
         "--filesystem=home"
@@ -18,12 +18,11 @@
         {
             "name": "VGrive",
             "buildsystem": "meson",
-            "config-opts": ["-Dlibunity=false", "-Dubuntu-bionic-patched-vte=false"],
             "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/bcedu/VGrive.git",
-                    "commit" : "59bf1e91cc1b80e3a41b9f1ae1cc44547355956e" 
+                    "type" : "archive",
+                    "url" : "https://github.com/bcedu/VGrive/archive/refs/tags/1.6.1.tar.gz",
+                    "sha256" : "f125ef74ce1d53517cc45d69716bb9668847d5c406096306aedf2a1178b4bfde"
                 }
             ]
         }
