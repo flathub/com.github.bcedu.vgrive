@@ -1,9 +1,9 @@
 {
     "app-id": "com.github.bcedu.vgrive",
     "runtime": "org.gnome.Platform",
-    "runtime-version" : "42",
+    "runtime-version" : "44",
     "base" : "io.elementary.BaseApp",
-    "base-version" : "juno-21.08",
+    "base-version" : "juno-22.08",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.bcedu.vgrive",
     "finish-args": [
@@ -15,6 +15,7 @@
         "--filesystem=home"
     ],
     "modules": [
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "VGrive",
             "buildsystem": "meson",
