@@ -1,0 +1,110 @@
+From 9281883a64237b1f1aadf912e78271e1fed42035 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Tue, 6 Aug 2024 15:51:29 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ data/com.github.bcedu.vgrive.appdata.xml.in | 44 +++++++++++++++++---------------------------
+ 1 file changed, 17 insertions(+), 27 deletions(-)
+
+diff --git a/data/com.github.bcedu.vgrive.appdata.xml.in b/data/com.github.bcedu.vgrive.appdata.xml.in
+index 6584632..0b44fd7 100644
+--- a/data/com.github.bcedu.vgrive.appdata.xml.in
++++ b/data/com.github.bcedu.vgrive.appdata.xml.in
+@@ -59,14 +59,13 @@ Automatically detects changes in local and remote files and syncs them.</p>
+           New option to start VGrive minimized.
+           For users who have enabled tray icons: Show vgrive icon in the notification area with options to close and show the app.
+           Added comand line options. Type "com.github.bcedu.vgrive --help" to see more information.
+-          Translations updates: Updated Dutch translation.
+-          Bug fixes:
++          Translations updates: Updated Dutch translation.</p>
++          <p>Bug fixes:</p>
+             <ul>
+               <li>Fix api search with specials chars like "\", "@", ...</li>
+               <li>Use single Soup Session to avoid crash caused by to many opened sessions</li>
+               <li>New way to update messages shown in the advanced view to avoid crash caused by the text buffer</li>
+             </ul>
+-          </p>
+         </description>
+       </release>
+       <release version="1.3.0" date="2019-11-07">
+@@ -77,14 +76,13 @@ Automatically detects changes in local and remote files and syncs them.</p>
+       </release>
+       <release version="1.2.4" date="2019-11-06">
+         <description>
+-          <p>Bug Fix: Ignore Google Docs (and other Google files).
+-          Translations:
++          <p>Bug Fix: Ignore Google Docs (and other Google files).</p>
++          <p>Translations:</p>
+           <ul>
+             <li>Polish and French translations (by @roypen and @NathanBnm )</li>
+             <li>Catalan translations updated</li>
+             <li>Some typo fixes</li>
+           </ul>
+-          </p>
+         </description>
+       </release>
+       <release version="1.2.0" date="2019-11-01">
+@@ -96,34 +94,28 @@ Automatically detects changes in local and remote files and syncs them.</p>
+       </release>
+       <release version="1.1.0" date="2019-10-29">
+         <description>
+-          <p>Improvments and features included with the new version:
++          <p>Improvments and features included with the new version:</p>
++          <p>New Login view (designed by @Fatih20 )</p>
+           <ul>
+-            <li><p>New Login view (designed by @Fatih20 )</p>
+-              <ul>
+-                <li>Login process separated in diferents views</li>
+-                <li>Allow select preferences  from the login view</li>
+-              </ul>
+-            </li>
+-            <li><p>New Sync view (designed by @Fatih20 )</p>
+-              <ul>
+-                <li>The default is cleaner and shows less information to the user</li>
+-                <li>There is an option to switch between this new view and the old view (named "Advanced view")</li>
+-              </ul>
+-            </li>
+-            <li>Make unity support optional (by @dguglielmi)</li>
++            <li>Login process separated in diferents views</li>
++            <li>Allow select preferences  from the login view</li>
+           </ul>
+-          </p>
++          <p>New Sync view (designed by @Fatih20 )</p>
++          <ul>
++            <li>The default is cleaner and shows less information to the user</li>
++            <li>There is an option to switch between this new view and the old view (named "Advanced view")</li>
++          </ul>
++          <p>Make unity support optional (by @dguglielmi)</p>
+         </description>
+       </release>
+       <release version="1.0.10" date="2019-10-22">
+         <description>
+-          <p>Improvments and features included with the new version:
++          <p>Improvments and features included with the new version:</p>
+           <ul>
+             <li>New logo by @Fatih20</li>
+             <li>Use buil-in red button</li>
+             <li>Fix detecting files with specials caracters though google drive api</li>
+           </ul>
+-          </p>
+         </description>
+       </release>
+       <release version="1.0.0" date="2019-08-29">
+@@ -139,11 +131,9 @@ Automatically detects changes in local and remote files and syncs them.</p>
+   <url type="bugtracker">https://github.com/bcedu/VGrive/issues</url>
+   <url type="translate">https://github.com/bcedu/VGrive/tree/master/po#readme</url>
+   <url type="help">https://github.com/bcedu/VGrive/issues</url>
++  <launchable type="desktop-id">com.github.bcedu.vgrive.desktop</launchable>
+   <update_contact>eduard.bc.95@gmail.com</update_contact>
+-  <content_rating type="oars-1.0">
++  <content_rating type="oars-1.1">
+     <content_attribute id="social-chat">mild</content_attribute>
+   </content_rating>
+-  <translation type="gettext"></translation>
+ </component>
+-
+-
+--
+libgit2 1.7.2
+
