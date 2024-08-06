@@ -23,6 +23,10 @@
                     "type" : "archive",
                     "url" : "https://github.com/bcedu/VGrive/archive/refs/tags/1.6.1.tar.gz",
                     "sha256" : "f125ef74ce1d53517cc45d69716bb9668847d5c406096306aedf2a1178b4bfde"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix-appdata.patch"
                 }
             ],
             "post-install" : [
