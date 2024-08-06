@@ -24,6 +24,10 @@
                     "url" : "https://github.com/bcedu/VGrive/archive/refs/tags/1.6.1.tar.gz",
                     "sha256" : "f125ef74ce1d53517cc45d69716bb9668847d5c406096306aedf2a1178b4bfde"
                 }
+            ],
+            "post-install" : [
+                "mkdir -p /app/share/icons/hicolor/scalable/apps && mv /app/share/icons/hicolor/256x256@2/apps/${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "find /app/share/icons/hicolor -type f -not -path \"*scalable*\" -not -path \"*actions*\" -name \"*.svg\" -delete"
             ]
         }
     ]
